@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0be70827-96d7-4264-974d-2b68f7ad05ae" name="Default Changelist" comment="" />
+    <list default="true" id="0be70827-96d7-4264-974d-2b68f7ad05ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/RoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Models/KiAdmins.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Models/KiRoles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resp/Admin/AdminResp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resp/Admin/RoleResp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/Admin/AdminService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/Admin/LoginService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/Admin/RoleService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Libs/Token.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Manage/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Manage/AccessController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resp/Manage/AccessRepo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resp/Manage/AccessRepo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Services/Manage/AccessService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/Manage/AccessService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/manage.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +30,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -135,6 +158,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mm5d2R38xFzyPvS9r6ZmRy4sXD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -171,11 +195,32 @@
       <workItem from="1610086012247" duration="12692000" />
       <workItem from="1610098759488" duration="3362000" />
       <workItem from="1610363000004" duration="2109000" />
-      <workItem from="1610365352286" duration="3784000" />
+      <workItem from="1610365352286" duration="4116000" />
+      <workItem from="1610434492271" duration="640000" />
+      <workItem from="1610687230297" duration="7102000" />
+      <workItem from="1610773491310" duration="2808000" />
+      <workItem from="1610790480578" duration="1170000" />
+      <workItem from="1610796028503" duration="3226000" />
+      <workItem from="1610857949320" duration="410000" />
+      <workItem from="1610885130222" duration="591000" />
+      <workItem from="1611033024371" duration="1341000" />
+      <workItem from="1611038560715" duration="15750000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

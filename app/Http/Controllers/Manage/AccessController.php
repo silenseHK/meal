@@ -23,17 +23,15 @@ class AccessController extends Controller
 
     public function lists():\Illuminate\Http\JsonResponse
     {
-        $validator = Validator::make(inputs(), pageRule());
-        if($validator->fails())
-            throw new ValidatorException($validator->errors()->first());
         $this->AccessService->getLists();
         return $this->serviceReturn($this->AccessService);
 
     }
 
-    public function first($id)
+    public function detail(int $id)
     {
-        return $id;
+        $this->AccessService->detail($id);
+        return $this->serviceReturn($this->AccessService);
     }
 
     public function add()
@@ -42,8 +40,7 @@ class AccessController extends Controller
             'title' => ['required', 'between:1,20', 'alpha_dash'],
             'methods' => ['required', 'in:'.implode(',', RequestMethods::values())],
             'uri' => ['required', 'between:1,100'],
-            'pid' => ['required', 'integer', 'min:0'],
-            'is_include' => ['required', 'integer', 'in:0,1']
+            'cid' => ['required', 'integer', 'min:0'],
         ]);
         if($validator->fails())
             throw new ValidatorException($validator->errors()->first());
@@ -51,18 +48,23 @@ class AccessController extends Controller
         return $this->serviceReturn($this->AccessService);
     }
 
-    public function edit($id)
+    public function update(int $id) //全量更新
     {
-        return $id;
-    }
-
-    public function update($id)
-    {
-        return $id;
+        $validator = Validator::make(inputs(), [
+            'title' => ['required', 'between:1,20', 'alpha_dash'],
+            'methods' => ['required', 'in:'.implode(',', RequestMethods::values())],
+            'uri' => ['required', 'between:1,100'],
+            'cid' => ['required', 'integer', 'min:0'],
+        ]);
+        if($validator->fails())
+            throw new ValidatorException($validator->errors()->first());
+        $this->AccessService->update($id);
+        return $this->serviceReturn($this->AccessService);
     }
 
     public function delete($id)
     {
-        return $id;
+        $this->AccessService->delete($id);
+        return $this->serviceReturn($this->AccessService);
     }
 }

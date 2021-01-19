@@ -66,3 +66,8 @@ function model($model, $where)
     }
     return $model;
 }
+
+function idExp():string
+{
+    return '^[1-9]\d*$';
+}
